@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="我的"/>-->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/dl"
+        android:id="@+id/image"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:drawableLeft="@android:drawable/ic_menu_myplaces"
+        android:hint="请输入用户名"
+        android:layout_centerVertical="true"
+        android:id="@+id/uname"/>
+
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/uname"
+        android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+        android:hint="请输入密码"
+        android:id="@+id/upassword"/>
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/upassword"
+        android:layout_marginLeft="70dp"
+        android:text="记住密码"
+        android:id="@+id/remember"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/upassword"
+        android:layout_alignLeft="@id/remember"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="5dp"
+        android:text="忘记密码"
+        android:id="@+id/forget"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_below="@id/remember"
+        android:layout_marginLeft="90dp"
+        android:text="登录"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forget"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="0dp"
+        android:text="注册"
+        android:id="@+id/button2"/>
+</RelativeLayout>
