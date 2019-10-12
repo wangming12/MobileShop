@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_gravity="center_vertical"
+       android:layout_weight="1"
+       android:gravity="center_vertical"
+       android:layout_margin="7dp"
+       android:orientation="vertical">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="addr"
+           android:id="@+id/poi_addr"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="lng"
+           android:visibility="gone"
+           android:id="@+id/poi_longitude"/>
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="lat"
+           android:visibility="gone"
+           android:id="@+id/poi_latitude"/>
+   </LinearLayout>
+</LinearLayout>
